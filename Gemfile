@@ -43,6 +43,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'rspec-rails'
   gem 'pry'
+  gem 'rb-readline'
   gem 'simplecov'
   gem 'vcr'
   gem 'webmock'
