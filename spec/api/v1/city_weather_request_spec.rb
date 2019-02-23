@@ -14,7 +14,7 @@ describe "sweater weather api" do
 
     data = JSON.parse(response.body)
 
-    expect(data.keys).to eq(["location", "current", "hourly", "daily"])
+    expect(data.keys).to eq(["location", "call", "current", "hourly", "daily"])
     expect(data["current"].keys).to eq(["feels", "current_temp", "visibility", "time", "humdity", "uv", "icon"])
     expect(data["hourly"].count).to eq(8)
     expect(data["hourly"].first.keys).to eq(["time", "temp"])
