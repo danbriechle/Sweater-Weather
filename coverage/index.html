@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-23T12:59:26-07:00">2019-02-23T12:59:26-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-23T14:04:53-07:00">2019-02-23T14:04:53-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.44
+         1.51
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>6</b> files in total.
-    <b>58</b> relevant lines. 
-    <span class="green"><b>58</b> lines covered</span> and
+    <b>5</b> files in total.
+    <b>10</b> relevant lines. 
+    <span class="green"><b>10</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -57,7 +57,7 @@
         <td>3</td>
         <td>3</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.3</td>
       </tr>
       
       <tr>
@@ -71,43 +71,33 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#8ddc36fca48c8a321bf85c520379c960afb1cbfd" class="src_link" title="app/services/dark_sky_service.rb">app/services/dark_sky_service.rb</a></td>
+        <td class="strong"><a href="#c30d5434500a384c09a8f271b6d5e6d2fda9db16" class="src_link" title="app/models/forecast.rb">app/models/forecast.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>25</td>
-        <td>14</td>
-        <td>14</td>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#b77d0e790a3c1ff1e3a31802c6d3c7dd72e788b0" class="src_link" title="app/services/google_geocode_service.rb">app/services/google_geocode_service.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>29</td>
-        <td>15</td>
-        <td>15</td>
-        <td>0</td>
-        <td>2.7</td>
+        <td>1.7</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#55b2590f404c2866aa8bcbf23309ba35d5317424" class="src_link" title="spec/services/dark_sky_service_spec.rb">spec/services/dark_sky_service_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>9</td>
-        <td>5</td>
-        <td>5</td>
+        <td>8</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#c04cbba7ebae12cf2e8fe15a300223e41a8d0c70" class="src_link" title="spec/services/geocode_service_spec.rb">spec/services/geocode_service_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>27</td>
-        <td>20</td>
-        <td>20</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0.0</td>
       </tr>
       
     </tbody>
@@ -152,10 +142,10 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
           
-          <code class="ruby">    render json: {&#39;weather&#39; =&gt; &#39;weather&#39;}</code>
+          <code class="ruby">    render json: Forecast.new(params[:location])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
@@ -206,13 +196,13 @@
 </div>
 
       
-        <div class="source_table" id="8ddc36fca48c8a321bf85c520379c960afb1cbfd">
+        <div class="source_table" id="c30d5434500a384c09a8f271b6d5e6d2fda9db16">
   <div class="header">
-    <h3>app/services/dark_sky_service.rb</h3>
+    <h3>app/models/forecast.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -223,341 +213,46 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">class DarkSkyService</code>
+          <code class="ruby">class Forecast</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  def self.key</code>
+          <code class="ruby">  def initialize(location)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
           
-          <code class="ruby">    ENV[&#39;DARK_SKY_API_KEY&#39;]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def self.forecast_query(city_state)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    lat = GoogleGeocodeService.lat(city_state)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    lng = GoogleGeocodeService.lng(city_state)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    get_json(&quot;/forecast/#{key}/#{lat},#{lng}&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  private</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def self.get_json(url)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    response = conn.get(url)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    JSON.parse(response.body, symbolize_names: true)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def self.conn</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    Faraday.new(url: &quot;https://api.darksky.net&quot;) do |f|</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      f.adapter Faraday.default_adapter</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="25">
-          
-          
-          <code class="ruby"> end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="b77d0e790a3c1ff1e3a31802c6d3c7dd72e788b0">
-  <div class="header">
-    <h3>app/services/google_geocode_service.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>15</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class GoogleGeocodeService</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def self.lng(city_state)</code>
+          <code class="ruby">    @location = location</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="4">
           <span class="hits">2</span>
           
-          <code class="ruby">    address_query(city_state)[:results][0][:geometry][:location][:lng]</code>
+          <code class="ruby">    @current = {}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def self.lat(city_state)</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="8">
+        <li class="covered" data-hits="2" data-linenumber="5">
           <span class="hits">2</span>
           
-          <code class="ruby">    address_query(city_state)[:results][0][:geometry][:location][:lat]</code>
+          <code class="ruby">    @hourly = {}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @daily = {}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def self.address_query(city_state)</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="12">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    get_json(&quot;/maps/api/geocode/json?address=#{city_state}&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  private</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def self.get_json(url)</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="18">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    response = conn.get(url)</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="19">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    JSON.parse(response.body, symbolize_names: true)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def self.conn</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="23">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    Faraday.new(url: &#39;https://maps.googleapis.com&#39;) do |faraday|</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="24">
-          <span class="hits">5</span>
-          
-          <code class="ruby">      faraday.params[&#39;key&#39;] = ENV[&#39;GOOGLE_API_KEY&#39;]</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="25">
-          <span class="hits">5</span>
-          
-          <code class="ruby">      faraday.adapter Faraday.default_adapter</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -573,8 +268,8 @@
     <h3>spec/services/dark_sky_service_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>0</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -582,58 +277,52 @@
   <pre>
     <ol>
       
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="1">
           
-          <code class="ruby">describe &quot;dark sky service&quot; do</code>
+          
+          <code class="ruby"># describe &quot;dark sky service&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="2">
           
-          <code class="ruby">  it &quot;can get current weather information&quot; do</code>
+          
+          <code class="ruby">#   it &quot;can get current weather information&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="3">
           
-          <code class="ruby">    city_state = &#39;denver,co&#39;</code>
+          
+          <code class="ruby">#     city_state = &#39;denver,co&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="4">
           
-          <code class="ruby">    response = DarkSkyService.forecast_query(city_state)</code>
+          
+          <code class="ruby">#     response = DarkSkyService.forecast_query(city_state)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">#</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="6">
           
-          <code class="ruby">    expect(response).to be_succesful</code>
+          
+          <code class="ruby">#     expect(response.keys).to eq([:latitude, :longitude, :timezone, :currently, :minutely, :hourly, :daily, :flags, :offset])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">#   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">end</code>
+          <code class="ruby"># end</code>
         </li>
       
     </ol>
@@ -646,8 +335,8 @@
     <h3>spec/services/geocode_service_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>20</b> relevant lines. 
-      <span class="green"><b>20</b> lines covered</span> and
+      <b>0</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -655,166 +344,166 @@
   <pre>
     <ol>
       
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="1">
           
-          <code class="ruby">describe &#39;geocode service&#39; do</code>
+          
+          <code class="ruby"># describe &#39;geocode service&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="2">
           
-          <code class="ruby">  it &#39;can get relavant address info from city and state&#39; do</code>
+          
+          <code class="ruby">#   it &#39;can get relavant address info from city and state&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="3">
           
-          <code class="ruby">    city_state = &#39;denver,co&#39;</code>
+          
+          <code class="ruby">#     city_state = &#39;denver,co&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="4">
           
-          <code class="ruby">    response = GoogleGeocodeService.address_query(city_state)</code>
+          
+          <code class="ruby">#     response = GoogleGeocodeService.address_query(city_state)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="5">
           
-          <code class="ruby">    expected_hash = {:lat =&gt; 39.7392358, :lng =&gt; -104.990251}</code>
+          
+          <code class="ruby">#     expected_hash = {:lat =&gt; 39.7392358, :lng =&gt; -104.990251}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="6">
           
-          <code class="ruby">    expect(response[:results][0][:geometry][:location].keys).to eq([:lat, :lng])</code>
+          
+          <code class="ruby">#     expect(response[:results][0][:geometry][:location].keys).to eq([:lat, :lng])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="7">
           
-          <code class="ruby">    expect(response[:results][0][:geometry][:location][:lat].class).to eq(Float)</code>
+          
+          <code class="ruby">#     expect(response[:results][0][:geometry][:location][:lat].class).to eq(Float)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">    expect(response[:results][0][:geometry][:location][:lng].class).to eq(Float)</code>
+          
+          <code class="ruby">#     expect(response[:results][0][:geometry][:location][:lng].class).to eq(Float)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">    expect(response[:results][0][:geometry][:location][:lat]).to eq(expected_hash[:lat])</code>
+          
+          <code class="ruby">#     expect(response[:results][0][:geometry][:location][:lat]).to eq(expected_hash[:lat])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="10">
           
-          <code class="ruby">    expect(response[:results][0][:geometry][:location][:lng]).to eq(expected_hash[:lng])</code>
+          
+          <code class="ruby">#     expect(response[:results][0][:geometry][:location][:lng]).to eq(expected_hash[:lng])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">#   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">#</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="13">
           
-          <code class="ruby">  it &#39;can get latitude from city and state&#39; do</code>
+          
+          <code class="ruby">#   it &#39;can get latitude from city and state&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="14">
           
-          <code class="ruby">    city_state = &#39;denver,co&#39;</code>
+          
+          <code class="ruby">#     city_state = &#39;denver,co&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="15">
           
-          <code class="ruby">    response = GoogleGeocodeService.lat(city_state)</code>
+          
+          <code class="ruby">#     response = GoogleGeocodeService.lat(city_state)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="16">
           
-          <code class="ruby">    expected_hash = {:lat =&gt; 39.7392358, :lng =&gt; -104.990251}</code>
+          
+          <code class="ruby">#     expected_hash = {:lat =&gt; 39.7392358, :lng =&gt; -104.990251}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="17">
           
-          <code class="ruby">    expect(response).to eq(expected_hash[:lat])</code>
+          
+          <code class="ruby">#     expect(response).to eq(expected_hash[:lat])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">#   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">#</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="20">
           
-          <code class="ruby">  it &#39;can get latitude from city and state&#39; do</code>
+          
+          <code class="ruby">#   it &#39;can get latitude from city and state&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="21">
           
-          <code class="ruby">    city_state = &#39;denver,co&#39;</code>
+          
+          <code class="ruby">#     city_state = &#39;denver,co&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="22">
           
-          <code class="ruby">    response = GoogleGeocodeService.lng(city_state)</code>
+          
+          <code class="ruby">#     response = GoogleGeocodeService.lng(city_state)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="23">
           
-          <code class="ruby">    expected_hash = {:lat =&gt; 39.7392358, :lng =&gt; -104.990251}</code>
+          
+          <code class="ruby">#     expected_hash = {:lat =&gt; 39.7392358, :lng =&gt; -104.990251}</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="24">
           
-          <code class="ruby">    expect(response).to eq(expected_hash[:lng])</code>
+          
+          <code class="ruby">#     expect(response).to eq(expected_hash[:lng])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">#   end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">#</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby"># end</code>
         </li>
       
     </ol>
