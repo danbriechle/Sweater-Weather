@@ -1,5 +1,5 @@
 class GoogleGeocodeService
-
+  
   def self.lng(city_state)
     address_query(city_state)[:results][0][:geometry][:location][:lng]
   end
@@ -12,6 +12,7 @@ class GoogleGeocodeService
     get_json("/maps/api/geocode/json?address=#{city_state}")
   end
 
+  private
 
   def self.get_json(url)
     response = conn.get(url)
