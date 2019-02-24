@@ -9,7 +9,6 @@ class DarkSkyService
     get_json("/forecast/#{key}/#{lat},#{lng}")
   end
 
-  private
 
   def self.get_json(url)
     response = conn.get(url)
