@@ -8,7 +8,6 @@ describe "background image request" do
     data = JSON.parse(response.body)
 
     expect(response).to be_successful
-    expect(data.keys).to eq(["location", "image"])
-    expect(data["location"]).to eq(city_state)
+    expect(data.keys).to eq(["image"])
   end
 end

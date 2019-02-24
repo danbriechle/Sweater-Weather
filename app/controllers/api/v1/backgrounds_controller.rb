@@ -1,5 +1,5 @@
 class Api::V1::BackgroundsController < ApplicationController
   def show
-    render json: Background.new(params[:location])
+    render json: ImageFacade.new(params[:location])
   end
 end
