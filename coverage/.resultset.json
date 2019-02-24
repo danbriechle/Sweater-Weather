@@ -120,10 +120,16 @@
         1,
         1,
         1,
+        null,
+        null,
+        1,
         1,
         null,
-        null,
-        null,
+        null
+      ],
+      "/Users/danielbriechle/turing/3mod/sweater_weather/app/service_facades/background_facade.rb": [
+        1,
+        1,
         1,
         1,
         null,
@@ -167,32 +173,41 @@
         null,
         null
       ],
+      "/Users/danielbriechle/turing/3mod/sweater_weather/app/service_facades/location_facade.rb": [
+        1,
+        1,
+        1,
+        30,
+        30,
+        null,
+        null
+      ],
       "/Users/danielbriechle/turing/3mod/sweater_weather/app/services/google_geocode_service.rb": [
         1,
         null,
         1,
-        16,
+        31,
         null,
         null,
         1,
-        16,
+        31,
         null,
         null,
         1,
-        33,
+        63,
         null,
         null,
         1,
         null,
         1,
-        33,
-        33,
+        63,
+        63,
         null,
         null,
         1,
-        33,
-        33,
-        33,
+        63,
+        63,
+        63,
         null,
         null,
         null,
@@ -246,6 +261,14 @@
         null,
         null
       ],
+      "/Users/danielbriechle/turing/3mod/sweater_weather/app/service_facades/forecast_facade.rb": [
+        1,
+        1,
+        1,
+        9,
+        null,
+        null
+      ],
       "/Users/danielbriechle/turing/3mod/sweater_weather/app/services/dark_sky_service.rb": [
         1,
         1,
@@ -273,6 +296,6 @@
         null
       ]
     },
-    "timestamp": 1550977241
+    "timestamp": 1550982161
   }
 }
