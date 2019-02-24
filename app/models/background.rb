@@ -1,11 +1,9 @@
 class Background
   def initialize(location)
-    @location = location
-    @image = self.image
-
+    @image = image(location)
   end
 
-  def image
-    FlickrService.photo_url(@location)
+  def image(location)
+    BackgroundFacade.new(location).image_hash
   end
 end
