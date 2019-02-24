@@ -4,8 +4,8 @@ class DarkSkyService
   end
 
   def self.forecast_query(city_state)
-    lat = GoogleGeocodeService.lat(city_state)
-    lng = GoogleGeocodeService.lng(city_state)
+    lat = LocationFacade.new(city_state).lat
+    lng = LocationFacade.new(city_state).lng
     get_json("/forecast/#{key}/#{lat},#{lng}")
   end
 

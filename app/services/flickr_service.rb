@@ -16,8 +16,8 @@ class FlickrService
   end
 
   def self.image_query(city_state)
-    lat = GoogleGeocodeService.lat(city_state)
-    lng = GoogleGeocodeService.lng(city_state)
+    lat = LocationFacade.new(city_state).lat
+    lng = LocationFacade.new(city_state).lng
     get_json("/services/rest?method=flickr.photos.search&api_key=#{ENV['FLICKR_API_KEY']}&lat=#{lat}lon=#{lng}&geo_context=2&radius=20&format=json&sort=relevance")
   end
 
