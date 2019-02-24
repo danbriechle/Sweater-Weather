@@ -1,3 +1,4 @@
+require "rails_helper"
 # describe "dark sky service" do
 #   it "can get current weather information" do
 #     city_state = 'denver,co'

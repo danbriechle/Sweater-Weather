@@ -1,3 +1,4 @@
+require "rails_helper"
 # describe 'geocode service' do
 #   it 'can get relavant address info from city and state' do
 #     city_state = 'denver,co'
