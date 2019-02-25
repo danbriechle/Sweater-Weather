@@ -1,5 +1,5 @@
 class Gif
   def initialize(city_state)
-    @images = GifServiceFacade.new(city_state).gif_data_aray
+    @images = GifServiceFacade.new(city_state).images
   end
 end

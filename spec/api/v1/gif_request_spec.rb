@@ -11,7 +11,7 @@ describe "gif request" do
     expect(data["images"][0].keys).to eq(["gif_url", "summary", "time"])
     expect(data["images"][0]["time"]).to_not eq(data["images"][1]["time"])
     # The time should also be different
-    expect(data["images"][0]["gif_url"]).to_not eq(data["images"][7]["gif_url"])
+    expect(data["images"][0]["gif_url"]).to_not eq(data["images"][2]["gif_url"])
     # Each <GIPHY_URL_GOES_HERE>  is a link to a different gif that is dependent on the weather
   end
 end

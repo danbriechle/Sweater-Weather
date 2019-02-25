@@ -1,5 +1,9 @@
 class GiphyService
 
+  def self.unique_gifs(search_term)
+    get_json("/v1/gifs/random?tag=#{search_term}&api_key=#{ENV['GIPHY_API_KEY']}&rating=g")
+  end
+
   def self.search_gifs(search_term)
     get_json("/v1/gifs/search?q=#{search_term}&api_key=#{ENV['GIPHY_API_KEY']}&rating=g&lang=en&limit=1")
   end
