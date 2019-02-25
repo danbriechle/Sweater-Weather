@@ -1,13 +1,13 @@
-require 'rails_helper'
-describe "gif request" do
-  it "can connect" do
-    city_state = "denver,co"
-    get "/api/v1/gifs?location=#{city_state}"
-
-    expect(response).to be_successful
-    data = JSON.parse(response.body)
-  end
-end
+# require 'rails_helper'
+# describe "gif request" do
+#   it "can connect" do
+#     city_state = "denver,co"
+#     get "/api/v1/gifs?location=#{city_state}"
+#
+#     expect(response).to be_successful
+#     data = JSON.parse(response.body)
+#   end
+# end
 
 
 

@@ -1,90 +1,26 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/danielbriechle/turing/3mod/sweater_weather/spec/services/dark_sky_service_spec.rb": [
+      "/Users/danielbriechle/turing/3mod/sweater_weather/app/services/giphy_service.rb": [
+        1,
         null,
+        1,
+        1,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/danielbriechle/turing/3mod/sweater_weather/spec/services/flickr_service_spec.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/danielbriechle/turing/3mod/sweater_weather/spec/services/geocode_service_spec.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/danielbriechle/turing/3mod/sweater_weather/app/controllers/api/v1/gifs_controller.rb": [
         1,
         1,
         1,
         null,
-        null
-      ],
-      "/Users/danielbriechle/turing/3mod/sweater_weather/app/controllers/application_controller.rb": [
+        null,
         1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
-      ],
-      "/Users/danielbriechle/turing/3mod/sweater_weather/app/models/gif.rb": [
-
       ]
     },
-    "timestamp": 1551111144
+    "timestamp": 1551111991
   }
 }
