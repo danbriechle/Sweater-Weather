@@ -6,7 +6,7 @@ class GifServiceFacade
 
 
   def forecast_factory(location)
-    ForecastFacade.new(location).forecast_hash[:daily][:data][0...7].map do |day|
+    ForecastServiceFacade.new(location).forecast_hash[:daily][:data][0...7].map do |day|
       {time: day[:time], summary: day[:summary], icon: day[:icon]}
     end
   end

@@ -4,6 +4,6 @@ class Background
   end
 
   def image(location)
-    BackgroundFacade.new(location).image_hash
+    BackgroundServiceFacade.new(location).image_hash
   end
 end

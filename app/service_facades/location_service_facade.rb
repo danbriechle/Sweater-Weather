@@ -1,4 +1,4 @@
-class LocationFacade
+class LocationServiceFacade
   attr_reader :lat, :lng
   def initialize(location)
     @lat = GoogleGeocodeService.lat(location)

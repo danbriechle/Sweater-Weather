@@ -39,7 +39,6 @@
         1,
         null,
         null,
-        null,
         null
       ],
       "/Users/danielbriechle/turing/3mod/sweater_weather/spec/api/v1/gif_request_spec.rb": [
@@ -61,48 +60,6 @@
         1,
         null,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         null,
         null,
@@ -243,7 +200,7 @@
         null,
         null
       ],
-      "/Users/danielbriechle/turing/3mod/sweater_weather/app/service_facades/background_facade.rb": [
+      "/Users/danielbriechle/turing/3mod/sweater_weather/app/service_facades/background_service_facade.rb": [
         1,
         1,
         1,
@@ -289,7 +246,7 @@
         null,
         null
       ],
-      "/Users/danielbriechle/turing/3mod/sweater_weather/app/service_facades/location_facade.rb": [
+      "/Users/danielbriechle/turing/3mod/sweater_weather/app/service_facades/location_service_facade.rb": [
         1,
         1,
         1,
@@ -376,12 +333,14 @@
         null,
         null,
         1,
+        null,
+        1,
         9,
         null,
         null,
         null
       ],
-      "/Users/danielbriechle/turing/3mod/sweater_weather/app/service_facades/forecast_facade.rb": [
+      "/Users/danielbriechle/turing/3mod/sweater_weather/app/service_facades/forecast_service_facade.rb": [
         1,
         1,
         1,
@@ -474,6 +433,6 @@
         null
       ]
     },
-    "timestamp": 1551124335
+    "timestamp": 1551124876
   }
 }

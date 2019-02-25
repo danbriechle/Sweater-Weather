@@ -1,8 +1,8 @@
 class DarkSkyService
 
   def self.forecast_query(city_state)
-    lat = LocationFacade.new(city_state).lat
-    lng = LocationFacade.new(city_state).lng
+    lat = LocationServiceFacade.new(city_state).lat
+    lng = LocationServiceFacade.new(city_state).lng
     get_json("/forecast/#{ENV['DARK_SKY_API_KEY']}/#{lat},#{lng}")
   end
 
