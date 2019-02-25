@@ -7,7 +7,7 @@ class Forecast
   end
 
   def current(location)
-    cw = ForecastFacade.new(location).forecast_hash[:currently]
+    cw = forecast(location)[:currently]
     {feels: cw[:apparentTemperature],
       current_temp: cw[:temperature],
          visibility: cw[:visibility],
@@ -18,7 +18,7 @@ class Forecast
   end
 
   def hourly(location)
-    hours = ForecastFacade.new(location).forecast_hash[:hourly][:data][0..7]
+    hours = forecast(location)[:hourly][:data][0..7]
     hours.map do |hour|
       { time: Time.at(hour[:time]),
          temp: hour[:temperature]}
@@ -26,7 +26,7 @@ class Forecast
   end
 
   def daily(location)
-    days = ForecastFacade.new(location).forecast_hash[:daily][:data][0..4]
+    days = forecast(location)[:daily][:data][0..4]
     days.map do |day|
      {chance: day[:precipProbability],
             hi: day[:temperatureHigh],
@@ -34,6 +34,12 @@ class Forecast
                summary: day[:summary],
                      icon: day[:icon]}
     end
+  end
+
+  private
+
+  def forecast(location)
+    ForecastFacade.new(location).forecast_hash
   end
 
 end
