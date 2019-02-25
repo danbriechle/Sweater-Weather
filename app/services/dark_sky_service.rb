@@ -1,12 +1,9 @@
 class DarkSkyService
-  def self.key
-    ENV['DARK_SKY_API_KEY']
-  end
 
   def self.forecast_query(city_state)
     lat = LocationFacade.new(city_state).lat
     lng = LocationFacade.new(city_state).lng
-    get_json("/forecast/#{key}/#{lat},#{lng}")
+    get_json("/forecast/#{ENV['DARK_SKY_API_KEY']}/#{lat},#{lng}")
   end
 
 
