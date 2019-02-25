@@ -13,9 +13,9 @@ class GifServiceFacade
 
   def gifs_factory(location)
     forecast_factory(location).map do |forecast|
-       {gif_url: GiphyService.unique_gifs(forecast[:icon])[:data][:url],
-                                            summary: forecast[:summary],
-                                                  time: forecast[:time]}
+       {gif_url: GiphyService.unique_gifs(forecast[:icon])[:data][:images][:original][:url],
+                                                                summary: forecast[:summary],
+                                                                      time: forecast[:time]}
     end
   end
 end

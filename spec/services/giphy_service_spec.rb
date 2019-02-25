@@ -14,10 +14,11 @@ describe 'giphy service' do
     summary = "partly cloudy"
     response_1 = GiphyService.unique_gifs(summary)
     response_2 = GiphyService.unique_gifs(summary)
+    binding.pry
 
-  
-    gif_url_1 = response_1[:data][:url]
-    gif_url_2 = response_2[:data][:url]
+
+    gif_url_1 = response_1[:data][:images][:original][:url]
+    gif_url_2 = response_2[:data][:images][:original][:url]
     expect(gif_url_1.class).to be(String)
     expect(gif_url_1).to_not eq(gif_url_2)
   end
