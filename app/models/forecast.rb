@@ -36,8 +36,10 @@ class Forecast
     end
   end
 
+  private
+  
   def forecast(location)
-    ForecastFacade.new(location).forecast_hash
+    ForecastServiceFacade.new(location).forecast_hash
   end
 
 end

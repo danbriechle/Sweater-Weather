@@ -35,5 +35,4 @@ describe "weather request" do
     expect(data["daily"].first.keys).to eq(["chance", "hi", "low", "summary", "icon"])
     end
   end
-
 end
