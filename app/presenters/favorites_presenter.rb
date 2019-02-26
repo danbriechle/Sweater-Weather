@@ -9,4 +9,8 @@ class FavoritesPresenter
      { location: favorite.location, current_weather: Forecast.new(favorite.location)}
      end
   end
+
+  def deleted_favorites_factory(location)
+    { location: location, current_weather: Forecast.new(location)}
+  end
 end
