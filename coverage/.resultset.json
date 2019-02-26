@@ -101,6 +101,27 @@
         null,
         null
       ],
+      "/Users/danielbriechle/turing/3mod/sweater_weather/spec/api/v1/user_login_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/danielbriechle/turing/3mod/sweater_weather/spec/models/user_model_spec.rb": [
         1,
         null,
@@ -128,7 +149,7 @@
         null,
         1,
         1,
-        2,
+        3,
         null,
         null
       ],
@@ -525,6 +546,6 @@
         null
       ]
     },
-    "timestamp": 1551147184
+    "timestamp": 1551147834
   }
 }
