@@ -10,9 +10,12 @@ describe "as a registered user " do
     delete "/api/v1/favorites", params: { "location": "Denver,CO",
                                          "api_key": user.api_key }
     data = JSON.parse(response.body)
+    favs = Favorite.all
     expect(response.status).to eq(200)
     expect(data["deleted_location"]).to eq("Denver,CO")
     expect(data.keys).to eq(["deleted_location", "current_weather"])
+    expect(favs.count).to eq(1)
+    expect(favs[0].location).to eq("Austin,TX")
     end
   end
 
