@@ -3,7 +3,7 @@ class Api::V1::FavoritesController < ApplicationController
   def index
     user = User.find_by(api_key: params[:api_key])
     if user
-      render json: FavoritesPresenter.new(user.id), status 200
+      render json: FavoritesPresenter.new(user.id)
     else
       render json: {problem: "you did it not good"}, status: 401
     end

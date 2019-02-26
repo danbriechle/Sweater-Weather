@@ -1,6 +1,7 @@
 require "rails_helper"
 describe "as a registered user" do
   it "can favorite locations" do
+    VCR.use_cassette 'favorite_locations' do
     location_1 = "denver,co"
     location_2 = "taos,nm"
     location_3 = "austin, tx"
@@ -19,5 +20,6 @@ describe "as a registered user" do
     expect(data[1]["location"]).to eq(location_2)
     binding.pry
     expect(data[0]["weather"].keys).to eq()
+    end
   end
 end
