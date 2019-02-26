@@ -1,4 +1,5 @@
 class Forecast
+attr_reader :current
   def initialize(location)
     @location = location
     @current = current(location)
@@ -37,7 +38,7 @@ class Forecast
   end
 
   private
-  
+
   def forecast(location)
     ForecastServiceFacade.new(location).forecast_hash
   end
