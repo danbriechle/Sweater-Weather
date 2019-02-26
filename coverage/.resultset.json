@@ -188,12 +188,13 @@
         1,
         null,
         1,
+        null,
+        null,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
         null,
         null,
         null
@@ -494,6 +495,7 @@
       "/Users/danielbriechle/turing/3mod/sweater_weather/app/models/forecast.rb": [
         1,
         1,
+        1,
         5,
         5,
         5,
@@ -703,6 +705,6 @@
         null
       ]
     },
-    "timestamp": 1551157243
+    "timestamp": 1551158801
   }
 }

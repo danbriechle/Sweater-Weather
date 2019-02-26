@@ -14,12 +14,13 @@ describe "as a registered user" do
     get "/api/v1/favorites", params: {api_key: user_1.api_key}
 
     data = JSON.parse(response.body)
+
+
     expect(response.status).to eq(200)
     expect(data.count).to eq(2)
     expect(data[0]["location"]).to eq(location_1)
     expect(data[1]["location"]).to eq(location_2)
-    binding.pry
-    expect(data[0]["weather"].keys).to eq()
+    expect(data[0]["current_weather"].keys).to eq(["location", "current", "hourly", "daily"])
     end
   end
 end
