@@ -5,7 +5,7 @@ describe 'registered user' do
     password = "best_password"
     user = User.create(password: password, email: email)
 
-    POST "/api/v1/sessions", params: {email: email,
+    post "/api/v1/sessions", params: {email: email,
                                 password: password,
                    password_confirmation: password}
 
@@ -13,7 +13,6 @@ describe 'registered user' do
     expect(response.status).to eq(200)
     expect(data.keys).to eq(["api_key"])
     expect(data["api_key"]).to eq(user.api_key)
-
   end
 
 end

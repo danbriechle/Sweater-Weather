@@ -31,6 +31,7 @@ gem 'fast_jsonapi'
 gem 'newrelic_rpm'
 gem 'faraday'
 gem 'figaro'
+gem 'bcrypt'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
