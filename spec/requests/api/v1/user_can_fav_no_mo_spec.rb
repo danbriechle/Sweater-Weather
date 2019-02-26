@@ -11,8 +11,8 @@ describe "as a registered user " do
                                          "api_key": user.api_key }
     data = JSON.parse(response.body)
     expect(response.status).to eq(200)
-    expect(data[0]["location"]).to eq("Denver,CO")
-    expect(data[0]["location"]).to eq("Auston,TX")
+    expect(data["deleted_location"]).to eq("Denver,CO")
+    expect(data.keys).to eq(["deleted_location", "current_weather"])
     end
   end
 end

@@ -10,7 +10,7 @@ class FavoritesPresenter
      end
   end
 
-  def deleted_favorites_factory(location)
-    { location: location, current_weather: Forecast.new(location)}
+  def self.deleted_favorites_factory(location)
+    {deleted_location: location, current_weather: Forecast.new(location)}
   end
 end
