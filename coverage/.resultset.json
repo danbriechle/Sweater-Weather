@@ -197,6 +197,25 @@
         1,
         null,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/danielbriechle/turing/3mod/sweater_weather/spec/models/favorite_model_spec.rb": [
@@ -259,7 +278,7 @@
         1,
         null,
         1,
-        9,
+        11,
         null,
         null
       ],
@@ -656,11 +675,11 @@
         1,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         1,
         null,
-        0,
+        1,
         null,
         null,
         null,
@@ -705,6 +724,6 @@
         null
       ]
     },
-    "timestamp": 1551158801
+    "timestamp": 1551159009
   }
 }
