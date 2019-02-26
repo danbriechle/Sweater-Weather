@@ -19,4 +19,14 @@ class Api::V1::FavoritesController < ApplicationController
     end
   end
 
+  def delete
+    user = User.find_by(api_key: params[:api_key])
+    if user && params[:location]
+      user.favorites.find_by(location: params[:location]).destroy
+      render json: FavoritesPresenter.deleted_favorites_factory(params[:location])
+    else
+      render json: {problem: "you did it not good"}, status: 401
+    end
+  end
+
 end
