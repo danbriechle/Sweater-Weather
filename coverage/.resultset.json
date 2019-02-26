@@ -84,6 +84,21 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/danielbriechle/turing/3mod/sweater_weather/spec/services/dark_sky_service_spec.rb": [
@@ -457,16 +472,16 @@
         1,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         1,
         null,
-        0,
+        1,
         null,
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null
@@ -490,6 +505,6 @@
         null
       ]
     },
-    "timestamp": 1551142305
+    "timestamp": 1551142517
   }
 }
