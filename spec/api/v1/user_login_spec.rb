@@ -15,7 +15,7 @@ describe 'registered user' do
     expect(data["api_key"]).to eq(user.api_key)
   end
 
-  it 'canno tlog in with bad info' do
+  it 'cannot log in with bad info' do
     email =  "dave@dave.com"
     password = "best_password"
     wrong_password = "bad_password"
