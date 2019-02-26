@@ -20,6 +20,7 @@ describe "as a registered user " do
   end
 
   it "cannot remove a favorite location with out proper info" do
+    VCR.use_cassette 'fav_no_mo_sad' do
     user = User.create(email: "dave@dave.com", password: "daves_super_secret_password")
     fav_1 = user.favorites.create(location: "Austin,TX")
     fav_2 = user.favorites.create(location: "Denver,CO")
@@ -29,5 +30,6 @@ describe "as a registered user " do
     data = JSON.parse(response.body)
     expect(response.status).to eq(401)
     expect(data["problem"]).to eq("you did it not good")
+    end
   end
 end

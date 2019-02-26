@@ -2,15 +2,15 @@ class Favorite < ApplicationRecord
   validates_presence_of :location
   belongs_to :user
 
-  before_create :lat, :lng
+  before_create :latitude, :longitude
 
   private
-
-  def lat
+  
+  def latitude
     self.lat = GoogleGeocodeService.lat(self.location)
   end
 
-  def lng
+  def longitude
     self.lng = GoogleGeocodeService.lng(self.location)
   end
 end

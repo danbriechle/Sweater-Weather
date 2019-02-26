@@ -7,7 +7,7 @@ describe 'giphy service' do
     response = GiphyService.search_gifs(summary)
 
     gif_url = response[:data][0][:images][:original][:url]
-    gif_url_hardcoded = "https://media2.giphy.com/media/12AwtlTuPlF29y/giphy.gif"
+    gif_url_hardcoded = "https://media0.giphy.com/media/G1T5M0qT6ZJlu/giphy.gif"
     expect(gif_url.class).to be(String)
     expect(gif_url).to eq(gif_url_hardcoded)
    end
