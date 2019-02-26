@@ -5,7 +5,7 @@ class Favorite < ApplicationRecord
   before_create :latitude, :longitude
 
   private
-  
+
   def latitude
     self.lat = GoogleGeocodeService.lat(self.location)
   end
@@ -13,4 +13,5 @@ class Favorite < ApplicationRecord
   def longitude
     self.lng = GoogleGeocodeService.lng(self.location)
   end
+
 end

@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-26T16:08:15-07:00">2019-02-26T16:08:15-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-02-26T16:31:35-07:00">2019-02-26T16:31:35-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>35</b> files in total.
-    <b>442</b> relevant lines. 
-    <span class="green"><b>442</b> lines covered</span> and
+    <b>443</b> relevant lines. 
+    <span class="green"><b>443</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -143,7 +143,7 @@
       <tr>
         <td class="strong"><a href="#703212064dc7cc95af8a5ab808440895a6f599f7" class="src_link" title="app/models/favorite.rb">app/models/favorite.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>16</td>
+        <td>17</td>
         <td>9</td>
         <td>9</td>
         <td>0</td>
@@ -203,11 +203,11 @@
       <tr>
         <td class="strong"><a href="#f0ce64f84a8fc8bde24ce6774441969a375ffcf6" class="src_link" title="app/service_facades/forecast_service_facade.rb">app/service_facades/forecast_service_facade.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>10</td>
-        <td>6</td>
-        <td>6</td>
+        <td>19</td>
+        <td>7</td>
+        <td>7</td>
         <td>0</td>
-        <td>3.2</td>
+        <td>3.0</td>
       </tr>
       
       <tr>
@@ -1204,7 +1204,7 @@
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">  </code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
@@ -1250,6 +1250,12 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>
@@ -1790,7 +1796,7 @@
         <li class="covered" data-hits="2" data-linenumber="9">
           <span class="hits">2</span>
           
-          <code class="ruby">     { location: favorite.location, current_weather: ForecastServiceFacade.by_lat_lng(favorite.lat, favorite.lng)[&quot;currently&quot;]}</code>
+          <code class="ruby">     { location: favorite.location, current_weather: ForecastServiceFacade.by_lat_lng(favorite.lat, favorite.lng)}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -1900,8 +1906,8 @@
     <h3>app/service_facades/forecast_service_facade.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1954,16 +1960,70 @@
         <li class="covered" data-hits="2" data-linenumber="8">
           <span class="hits">2</span>
           
-          <code class="ruby">    @forecast_hash = DarkSkyService.forecast_query_by_lat_lng(lat, lng)</code>
+          <code class="ruby">    cw = DarkSkyService.forecast_query_by_lat_lng(lat, lng)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">                          {feels: cw[:apparentTemperature],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">                            current_temp: cw[:temperature],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">                               visibility: cw[:visibility],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">                                  time: Time.at(cw[:time]),</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">                                    humdity: cw[:humidity],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">                                          uv: cw[:uvIndex],</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="15">
+          <span class="hits">2</span>
+          
+          <code class="ruby">                                           icon: cw[:icon]}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>
@@ -2251,7 +2311,7 @@
         <li class="covered" data-hits="2" data-linenumber="10">
           <span class="hits">2</span>
           
-          <code class="ruby">    get_json(&quot;/forecast/#{ENV[&#39;DARK_SKY_API_KEY&#39;]}/#{lat},#{lng}&quot;)</code>
+          <code class="ruby">    get_json(&quot;/forecast/#{ENV[&#39;DARK_SKY_API_KEY&#39;]}/#{lat},#{lng}&quot;)[:currently]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
@@ -4603,7 +4663,7 @@
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby">    </code>
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="24">
@@ -4633,7 +4693,7 @@
         <li class="covered" data-hits="1" data-linenumber="28">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(data[0][&quot;current_weather&quot;].keys).to eq([&quot;location&quot;, &quot;current&quot;, &quot;hourly&quot;, &quot;daily&quot;])</code>
+          <code class="ruby">    expect(data[0][&quot;current_weather&quot;].keys).to eq([&quot;feels&quot;, &quot;current_temp&quot;, &quot;visibility&quot;, &quot;time&quot;, &quot;humdity&quot;, &quot;uv&quot;, &quot;icon&quot;])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">

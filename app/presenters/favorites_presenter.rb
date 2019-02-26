@@ -6,7 +6,7 @@ class FavoritesPresenter
 
   def favoritesfactory(user_id)
     Favorite.where(user_id: user_id).map do |favorite|
-     { location: favorite.location, current_weather: ForecastServiceFacade.by_lat_lng(favorite.lat, favorite.lng)["currently"]}
+     { location: favorite.location, current_weather: ForecastServiceFacade.by_lat_lng(favorite.lat, favorite.lng)}
      end
   end
 

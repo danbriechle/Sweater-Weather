@@ -7,7 +7,7 @@ class DarkSkyService
   end
 
   def self.forecast_query_by_lat_lng(lat, lng)
-    get_json("/forecast/#{ENV['DARK_SKY_API_KEY']}/#{lat},#{lng}")
+    get_json("/forecast/#{ENV['DARK_SKY_API_KEY']}/#{lat},#{lng}")[:currently]
   end
 
   def self.get_json(url)

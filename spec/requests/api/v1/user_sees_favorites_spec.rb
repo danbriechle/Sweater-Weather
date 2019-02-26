@@ -20,12 +20,12 @@ describe "as a registered user" do
     expect(fav_2.lng).to eq("-105.5730665")
     expect(fav_3.lat).to eq("30.267153")
     expect(fav_3.lng).to eq("-97.7430608")
-    
+
     expect(response.status).to eq(200)
     expect(data.count).to eq(2)
     expect(data[0]["location"]).to eq(location_1)
     expect(data[1]["location"]).to eq(location_2)
-    expect(data[0]["current_weather"].keys).to eq(["location", "current", "hourly", "daily"])
+    expect(data[0]["current_weather"].keys).to eq(["feels", "current_temp", "visibility", "time", "humdity", "uv", "icon"])
     end
   end
 

@@ -17,6 +17,7 @@
         1,
         11,
         null,
+        null,
         null
       ],
       "/Users/danielbriechle/turing/3mod/sweater_weather/app/models/application_record.rb": [
@@ -631,6 +632,15 @@
         1,
         2,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/danielbriechle/turing/3mod/sweater_weather/app/services/dark_sky_service.rb": [
@@ -807,6 +817,6 @@
         null
       ]
     },
-    "timestamp": 1551222495
+    "timestamp": 1551223895
   }
 }
