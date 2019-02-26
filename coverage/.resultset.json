@@ -110,11 +110,13 @@
         null,
         1,
         null,
-        null,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -155,11 +157,38 @@
         null,
         null
       ],
+      "/Users/danielbriechle/turing/3mod/sweater_weather/spec/models/favorite_model_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/danielbriechle/turing/3mod/sweater_weather/app/models/favorite.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/danielbriechle/turing/3mod/sweater_weather/app/models/application_record.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/danielbriechle/turing/3mod/sweater_weather/spec/models/user_model_spec.rb": [
         1,
         null,
         1,
         1,
+        2,
         2,
         2,
         2,
@@ -179,6 +208,7 @@
         1,
         1,
         1,
+        1,
         null,
         1,
         null,
@@ -188,12 +218,6 @@
         null,
         1,
         6,
-        null,
-        null
-      ],
-      "/Users/danielbriechle/turing/3mod/sweater_weather/app/models/application_record.rb": [
-        1,
-        1,
         null,
         null
       ],
@@ -592,7 +616,7 @@
         1,
         1,
         1,
-        0,
+        1,
         null,
         0,
         null,
@@ -615,6 +639,6 @@
         null
       ]
     },
-    "timestamp": 1551151077
+    "timestamp": 1551151855
   }
 }

@@ -6,10 +6,15 @@ describe "as a registered user" do
 
     post "/api/v1/favorites", params: { location: location,
                                      api_key: user.api_key}
-
-    data = Json.parse(response.body)
+    fav = Favorite.last
+    data = JSON.parse(response.body)
     expect(response.status).to eq(200)
     expect(data.keys).to eq(["message"])
     expect(data["message"]).to eq("#{location} added to favorites")
+    expect(fav.location).to eq(location)
+    expect(fav.user_id).to eq(user.id)
+  end
+
+  it "cannot favorite a location with the wrong api key" do
   end
 end
