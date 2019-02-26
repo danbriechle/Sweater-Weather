@@ -15,4 +15,16 @@ describe "as a registered user " do
     expect(data.keys).to eq(["deleted_location", "current_weather"])
     end
   end
+
+  it "cannot remove a favorite location with out proper info" do
+    user = User.create(email: "dave@dave.com", password: "daves_super_secret_password")
+    fav_1 = user.favorites.create(location: "Austin,TX")
+    fav_2 = user.favorites.create(location: "Denver,CO")
+
+    delete "/api/v1/favorites", params: { "location": "Denver,CO",
+                                         "api_key": "poop_emoji" }
+    data = JSON.parse(response.body)
+    expect(response.status).to eq(401)
+    expect(data["problem"]).to eq("you did it not good")
+  end
 end
