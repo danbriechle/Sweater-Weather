@@ -8,7 +8,7 @@ describe "as a registered user" do
     user_2 = User.create(email: "donna@dave.com", password: "donnas_really_good_password")
     fav_1 = user_1.favorites.create(location: location_1)
     fav_2 = user_1.favorites.create(location: location_2)
-    fav_1 = user_2.favorites.create(location: location_3)
+    fav_3 = user_2.favorites.create(location: location_3)
 
     get "/api/v1/favorites", params: {api_key: user_1.api_key}
 
