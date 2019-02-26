@@ -3,10 +3,10 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-        get 'forecast', to: 'forecasts#show'
-        get 'backgrounds', to: 'backgrounds#show'
-        get 'gifs', to: 'gifs#show'
-        post 'users', to: 'users#create'
+      get 'backgrounds', to: 'backgrounds#show'
+      get 'forecast', to: 'forecasts#show'
+      post 'users', to: 'users#create'
+      get 'gifs', to: 'gifs#show'
     end
   end
 end
