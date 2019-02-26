@@ -6,7 +6,8 @@ Rails.application.routes.draw do
       get 'backgrounds', to: 'backgrounds#show'
       get 'forecast', to: 'forecasts#show'
       post 'users', to: 'users#create'
-      resources :sessions, only: [:create]
+      post 'sessions', to: 'sessions#create'
+      post 'favorites', to: 'favorites#create'
       get 'gifs', to: 'gifs#show'
     end
   end
